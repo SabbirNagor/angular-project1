@@ -1,0 +1,19 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center">
+  <div fxFlex="80" class="search-bar-background">
+
+    <form [formGroup]="searchForm" (ngSubmit)="search()">
+      <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayoutGap="1rem grid">
+
+        <mat-form-field fxFlex="90" appearance="outline" floatLabel="always">
+          <mat-label>Video Link</mat-label>
+          <input matInput placeholder="Paste your video link here">
+        </mat-form-field>
+
+        <div fxFlex="10">
+          <button mat-stroked-button color="primary" type="submit">DOWNLOAD</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
